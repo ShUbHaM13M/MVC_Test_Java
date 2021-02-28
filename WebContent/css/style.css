@@ -1,0 +1,109 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #43ABC9;
+}
+
+html, body {
+	height: 100%;
+}
+
+nav {
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 5em;
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 2em
+}
+
+.links {
+	display: flex;
+	list-style-type: none;
+	gap: 1em;
+}
+
+.links li:hover>a {
+	color: #1287AB;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 2em;
+	margin-top: 2em;
+	padding: 2em
+}
+
+form {
+	min-height: 50%;
+	flex-direction: column;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	border-radius: 0.5em;
+	padding: 2em;
+	gap: 2em;
+}
+
+.field {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	gap: 1em
+}
+
+input {
+	font-size: 16px;
+	padding: 0.5em 0.8em;
+	outline: none;
+	border: 2px solid rgba(0, 0, 0, 0.4);
+	transition: border 350ms ease;
+	border-radius: 5px;
+}
+
+input:hover, input:focus {
+	border: 2px solid #1287AB;
+}
+
+form button {
+	font-size: 1.1em;
+	border: none;
+	outline: none;
+	background-color: #1287AB;
+	padding: 0.4em 1.4em;
+	color: #fff;
+	border-radius: 5px;
+	transition: background-color 350ms ease;
+}
+
+form button:hover, form button:focus {
+	background-color: #43ABC9;
+}
+
+.text-large {
+	font-size: 1.2rem;
+}
+
+hr {
+	width: 10em;
+	opacity: 0.6
+}
